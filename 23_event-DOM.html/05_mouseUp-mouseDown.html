@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MouseUp & MouseDown Document</title>
+</head>
+<body>
+    <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, veritatis sunt corporis magni harum laborum.</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, atque.</p>
+    <img id="bulb" onmousedown="lightOn()" onmouseup="lightOff()" src="bulboff.gif" alt="Bulb" height="150px" width="100px">
+
+    <script>
+        function lightOn() {
+            document.getElementById("bulb").src = "bulbOn.jpg";
+        }
+        function lightOff(){
+            document.getElementById("bulb").src = "bulboff.gif";
+        }
+    </script>
+</body>
+</html>

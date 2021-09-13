@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MouseOver & MouseOut Document</title>
+</head>
+<body>
+    <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima cumque repudiandae odit reprehenderit illum!</h2>
+    <p onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    
+    <script>
+        function mouseOver(obj) {
+            obj.innerHTML ="Lorem ipsum dolor sit, amet consectetur adipisicing.";
+            obj.style.backgoundColor = "red";
+        }
+        function mouseOut(obj) {
+            obj.innerHTML ="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime.";
+        }
+    </script>
+</body>
+</html>

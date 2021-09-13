@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aperiam neque magni explicabo, voluptates
+        voluptate.</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <button onclick="dates()">All-Dates</button>
+    <button onclick="getDates()">Date</button>
+    <button onclick="toDateStrings()">Day-date</button>
+    <button onclick="getFullYear()">Year</button>
+    <button onclick="getMonth()">Month</button>
+    <button onclick="getDay()">Day</button>
+    <button onclick="getHours()">Hours</button>
+    <button onclick="getMinutes()">Minutes</button>
+    <button onclick="getSeconds()">Seconds</button>
+    
+    <h3 id="date"></h3>
+    <h3 id="getDate"></h3>
+    <h3 id="dateStrings"></h3>
+    <h3 id="fullYear"></h3>
+    <h3 id="month"></h3>
+    <h3 id="day"></h3>
+    <h3 id="hours"></h3>
+    <h3 id="minutes"></h3>
+    <h3 id="Seconds"></h3>
+    <script>
+        function dates() {
+            document.getElementById("date").innerHTML = Date();
+        }
+        function getDates(){
+            var nw = new Date();
+            document.getElementById("getDate").innerHTML = nw.getDate();
+        }
+        function toDateStrings(){
+            var nw = new Date();
+            document.getElementById("dateStrings").innerHTML = nw.toDateString();
+        }
+        function getFullYear(){
+            var nw = new Date();
+            document.getElementById("fullYear").innerHTML = nw.getFullYear();
+        }
+        function getMonth(){
+            var nw = new Date();
+            document.getElementById("month").innerHTML = nw.getMonth();        }
+        function getDay(){
+            var nw = new Date();
+            document.getElementById("day").innerHTML = nw.getDay();
+        }
+        function getHours(){
+            var nw = new Date();
+            document.getElementById("hours").innerHTML = nw.getHours();
+        }
+        function getMinutes(){
+            var nw = new Date();
+            document.getElementById("minutes").innerHTML = nw.getMinutes();
+        }
+        function getSeconds(){
+            var nw = new Date();
+            document.getElementById("seconds").innerHTML = nw.getSeconds();
+        }
+    </script>
+</body>
+
+</html>
